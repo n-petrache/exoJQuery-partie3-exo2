@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="jquery-2.2.4.js"></script>
+    <title></title>
+  </head>
+  <body>
+    <button type="button" name="button" onClick="comptPlus()">+</button>
+    <span>0</span>
+    <button type="button" name="button" onClick="comptMoins()">-</button>
+    <script>
+      var cliq = 0;
+      function comptPlus(){
+        cliq++;
+        $("span").text(cliq);
+      }
+      function comptMoins(){
+        cliq--;
+        $("span").text(cliq);
+      }
+    </script>
+  </body>
+</html>
